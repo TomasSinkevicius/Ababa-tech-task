@@ -1,0 +1,30 @@
+.fade-animation {
+  &--fade-in {
+    animation: enter 0.6s ease-out forwards;
+  }
+  &--fade-out {
+    animation: exit 0.6s ease-out;
+  }
+}
+
+@keyframes enter {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}

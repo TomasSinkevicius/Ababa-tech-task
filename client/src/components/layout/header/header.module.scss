@@ -1,0 +1,50 @@
+.container {
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  background: linear-gradient(
+    to right,
+    #f7971e,
+    #ffd200
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+  align-items: center;
+  height: 96px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+
+    border: none;
+    fill: black;
+    svg {
+      transition: transform 0.7s ease-in-out;
+      width: 25px;
+    }
+
+    &:hover {
+      svg {
+        transform: rotate(360deg);
+      }
+      span {
+        font-weight: 600;
+      }
+
+      cursor: pointer;
+    }
+  }
+}
